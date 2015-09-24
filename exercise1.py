@@ -15,3 +15,7 @@ __license__ = "MIT License"
 
 money = 100.00
 print(money)
+
+cheque = 10
+
+
