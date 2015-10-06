@@ -16,9 +16,13 @@ __license__ = "MIT License"
 def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
+
     Inputs:
+
     Expected Outputs:
+
     Errors:
+
     """
 
     no_of_sides = input("Please provide the number of sides of a shape that you are thinking about: ")
@@ -41,18 +45,5 @@ def name_that_shape():
         print("The polygon you are thinking about is a DECAGON")
     else:
         print("Error")
-
-    #"""
-    #name_that_shape()r a given number of sides in a regular polygon, returns the shape name
-
-    #Inputs:
-
-    #Expected Outputs:
-
-    #Errors:
-   # """
-
-    #print("Error")
-
 
 name_that_shape()
