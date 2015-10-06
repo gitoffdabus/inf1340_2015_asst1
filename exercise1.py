@@ -20,14 +20,20 @@ number_of_shares = 2000
 initial_share = 900
 sales_share = 942.75
 commission_percentage = .03
-initial_commission = number_of_shares * initial_share * commission_percentage
-initial_cost = number_of_shares * initial_share + initial_commission
-sales_commission = number_of_shares * sales_share * commission_percentage
-sales_price = number_of_shares * sales_share - sales_commission
+
+# Commission paid to the broker for purchasing the shares
+initial_commission = (number_of_shares * initial_share) * commission_percentage
+
+# Total cost of purchasing the shares
+initial_cost = (number_of_shares * initial_share) + initial_commission
+
+# Commission paid to the broker for selling the shares
+sales_commission = (number_of_shares * sales_share) * commission_percentage
+
+# Total cost of selling the shares
+sales_price = (number_of_shares * sales_share) - sales_commission
+
+# Calculation of money left with Lakshmi
 money = sales_price - initial_cost
-print ("Lakshi is at a balance of %d after selling her stock and paying her broker twice" %money)
-
-
-
-
-
+print ("Lakshmi is at a balance of %d after selling her stock and paying her broker twice" %money)
+print("Thus, Lakshmi suffered a loss")

@@ -47,3 +47,23 @@ def name_that_shape():
         print("Error")
 
 name_that_shape()
+
+"""
+
+Test Case 1
+user input = 7
+expected output = The polygon you are thinking about is a Heptagon
+actual output = The polygon you are thinking about is a Heptagon
+
+Test Case 2
+user input = 4
+expected output = The polygon you are thinking about is Quadrilateral
+actual output = The polygon you are thinking about is Quadrilateral
+
+Test Case 3
+user input = 9
+expected output = The polygon you are thinking about is an ENNEAGON
+actual output = The polygon you are thinking about is an ENNEAGON
+
+"""
+
