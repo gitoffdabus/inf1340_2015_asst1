@@ -13,9 +13,3 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-money = 100.00
-print(money)
-
-cheque = 10
-
-
