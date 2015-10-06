@@ -37,3 +37,11 @@ sales_price = (number_of_shares * sales_share) - sales_commission
 money = sales_price - initial_cost
 print ("Lakshmi is at a balance of %d after selling her stock and paying her broker twice" %money)
 print("Thus, Lakshmi suffered a loss")
+
+"""
+Test Case 1
+no input required
+expected output:-25065
+actual output: -25065
+
+"""
