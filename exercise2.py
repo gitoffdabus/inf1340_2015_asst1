@@ -65,5 +65,30 @@ user input = 9
 expected output = The polygon you are thinking about is an ENNEAGON
 actual output = The polygon you are thinking about is an ENNEAGON
 
+Test Case 4
+user input = 1
+expected output = Error
+actual output = Error
+
+Test Case 5
+user input = 11
+expected output = Error
+actual output = Error
+
+Test Case 6
+user input = "three"
+expected output = Error
+actual output = Error
+
+Test Case 7
+user input = 4.5
+expected output = Error
+actual output = Error
+
+Test Case 8
+user input = 4.0
+expected output = The polygon you are thinking about is a QUADRILATERAL
+actual output = The polygon you are thinking about is a QUADRILATERAL
+
 """
 
