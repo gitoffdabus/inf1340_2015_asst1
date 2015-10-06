@@ -17,6 +17,7 @@ __license__ = "MIT License"
 
 # Inputs:
 def diagnose_car():
+    ans1 = None
     print ("Is the car silent when you turn the key?")
     ans1 = raw_input("Press [Y]Yes or [N]No")
     if ans1 == "y":
@@ -52,3 +53,33 @@ def diagnose_car():
 
 
 diagnose_car()
+
+"""
+Test Case 1
+user_input = n, n, n, y, y
+expected output = Check to ensure the choke is opening and closing.
+actual output = Get it in for service
+
+Reason = Yes and No nodes are reversed in last column. Had to switch ordering of statements.
+
+Test Case 2
+user_input = n, n, n, n
+expected output = Engine is not getting enough fuel. Clean fuel pump.
+actual output = Program ends after the prompt, "Does the engine start and then die?"
+
+Reason = else statement for "Engine is not getting enough fuel. Clean fuel pump." was not properly indented.
+
+Test Case 3
+user_input = other than "y" or "n"
+expected output = ?
+actual output = registers as "n"
+
+fixing problem:
+make ans1 = None
+run again - input "y"
+stop program and run again
+input other than "y" or "n"
+assumes input is "n"
+
+
+ """
