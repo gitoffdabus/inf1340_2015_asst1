@@ -28,21 +28,21 @@ def name_that_shape():
     no_of_sides = input("Please provide the number of sides of a shape that you are thinking about: ")
 
     if no_of_sides == 3:
-        print("The polygon you are thinking about is a TRIANGLE")
+        print("The polygon you are thinking about is a triangle")
     elif no_of_sides == 4:
-        print("The polygon you are thinking about is a QUADRILATERAL")
+        print("The polygon you are thinking about is a quadrilateral")
     elif no_of_sides == 5:
-        print("The polygon you are thinking about is a PENTAGON")
+        print("The polygon you are thinking about is a pentagon")
     elif no_of_sides == 6:
-        print("The polygon you are thinking about is a HEXAGON")
+        print("The polygon you are thinking about is a hexagon")
     elif no_of_sides == 7:
-        print("The polygon you are thinking about is a HEPTAGON")
+        print("The polygon you are thinking about is a heptagon")
     elif no_of_sides == 8:
-        print("The polygon you are thinking about is an OCTAGON")
+        print("The polygon you are thinking about is an octagon")
     elif no_of_sides == 9:
-        print("The polygon you are thinking about is an ENNEAGON")
+        print("The polygon you are thinking about is an nonagon")
     elif no_of_sides == 10:
-        print("The polygon you are thinking about is a DECAGON")
+        print("The polygon you are thinking about is a decagon")
     else:
         print("Error")
 
@@ -62,7 +62,7 @@ Error: None
 
 Test Case 3
 user input = 9
-expected output = The polygon you are thinking about is an ENNEAGON
+expected output = The polygon you are thinking about is an nonagon
 Error: None
 
 Test Case 4
