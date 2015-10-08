@@ -35,42 +35,42 @@ name_that_shape()
 Test Case 1
 user input = 7
 expected output = The polygon you are thinking about is a Heptagon
-actual output = The polygon you are thinking about is a Heptagon
+Error: None
 
 Test Case 2
 user input = 4
 expected output = The polygon you are thinking about is Quadrilateral
-actual output = The polygon you are thinking about is Quadrilateral
+Error: None
 
 Test Case 3
 user input = 9
 expected output = The polygon you are thinking about is an ENNEAGON
-actual output = The polygon you are thinking about is an ENNEAGON
+Error: None
 
 Test Case 4
 user input = 1
 expected output = Error
-actual output = Error
+Error: None
 
 Test Case 5
 user input = 11
 expected output = Error
-actual output = Error
+Error: None
 
 Test Case 6
 user input = "three"
 expected output = Error
-actual output = Error
+Error: None
 
 Test Case 7
 user input = 4.5
 expected output = Error
-actual output = Error
+Error: None
 
 Test Case 8
 user input = 4.0
 expected output = The polygon you are thinking about is a QUADRILATERAL
-actual output = The polygon you are thinking about is a QUADRILATERAL
+Error: None
 
 """
 
