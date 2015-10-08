@@ -14,40 +14,30 @@ __license__ = "MIT License"
 
 
 def name_that_shape():
-    """
-    For a given number of sides in a regular polygon, returns the shape name
-
-    Inputs:
-
-    Expected Outputs:
-
-    Errors:
-
-    """
-
-    no_of_sides = input("Please provide the number of sides of a shape that you are thinking about: ")
-
-    if no_of_sides == 3:
+    no_of_sides = raw_input("Please provide the number of sides of a shape that you are thinking about: ")
+#   if statement is used to provide answers to the possible inputs of the user
+    if no_of_sides == "3":
         print("The polygon you are thinking about is a triangle")
-    elif no_of_sides == 4:
+    elif no_of_sides == "4":
         print("The polygon you are thinking about is a quadrilateral")
-    elif no_of_sides == 5:
+    elif no_of_sides == "5":
         print("The polygon you are thinking about is a pentagon")
-    elif no_of_sides == 6:
+    elif no_of_sides == "6":
         print("The polygon you are thinking about is a hexagon")
-    elif no_of_sides == 7:
+    elif no_of_sides == "7":
         print("The polygon you are thinking about is a heptagon")
-    elif no_of_sides == 8:
+    elif no_of_sides == "8":
         print("The polygon you are thinking about is an octagon")
-    elif no_of_sides == 9:
+    elif no_of_sides == "9":
         print("The polygon you are thinking about is an nonagon")
-    elif no_of_sides == 10:
+    elif no_of_sides == "10":
         print("The polygon you are thinking about is a decagon")
     else:
         print("Error")
 
-name_that_shape()
 
+
+#name_that_shape()
 """
 
 Test Case 1

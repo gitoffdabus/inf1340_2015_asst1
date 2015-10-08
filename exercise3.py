@@ -14,69 +14,44 @@ __license__ = "MIT License"
 
 
 def diagnose_car():
-
-    ans1 = None
-# While loop is user to respond to the cases where user does not input "y" or "n"
-    while ans1 not in ("y", "n"):
-        print("Is the car silent when you turn the key?")
 # ans1, ans2, ans3, ans4, ans5 are the variables used to collect user response to the queries
-        ans1 = raw_input("Press [Y]Yes or [N]No" + " ")
+        ans1 = raw_input("Is the car silent when you turn the key? Press [Y]Yes or [N]No")
 # if statement is used to provide a response to the user for a final answer or a possible further query
-        if ans1 == "y":
-            ans2 = None
-            while ans2 not in ("y", "n"):
-                print("Are the battery terminals corroded?")
-                ans2 = raw_input("Press [Y]Yes or [N]No" + " ")
-                if ans2 == "y":
-                    print("Clean terminals and try starting again")
-                elif ans2 == "n":
-                    print("Replace cables and try again")
-# if the user does not press either "y" or "n", while loop comes into play and restarts the if loop
-                else:
-                    print("You have made a wrong selection. Please Press Y or N" + " ")
-        elif ans1 == "n":
-            ans2 = None
-            while ans2 not in ("y", "n"):
-                print("Does the car make a clicking noise")
-                ans2 = raw_input("Press [Y]Yes or [N]No" + " ")
-                if ans2 == "y":
-                    print("Replace the battery")
-                elif ans2 == "n":
-                    ans3 = None
-                    while ans3 not in ("y", "n"):
-                        print("Does the car crank up but fail to start?")
-                        ans3 = raw_input("Press [Y]Yes or [N]No" + " ")
-                        if ans3 == "y":
-                            print("Check spark plug connections")
-                        elif ans3 == "n":
-                            ans4 = None
-                            while ans4 not in ("y", "n"):
-                                print("Does the engine start and then die?")
-                                ans4 = raw_input("Press [Y]Yes or [N]No" + " ")
-                                if ans4 == "y":
-                                    ans5 = None
-                                    while ans5 not in ("y", "n"):
-                                        print("Does your car have fuel injection?")
-                                        ans5 = raw_input("Press [Y]Yes or [N]No" + " ")
-                                        if ans5 == "y":
-                                            print("Get it in for Service!")
-                                        elif ans5 == "n":
-                                            print("Check to insure the choke is opening and closing")
+        if ans1 == "Y":
+            ans2 = raw_input("Are the battery terminals corroded? Press [Y]Yes or [N]No")
+            if ans2 == "Y":
+                print("Clean terminals and try starting again.")
+            elif ans2 == "N":
+                print("Replace cables and try again.")
+            else:
+                print("Error")
+        elif ans1 == "N":
+                ans2 = raw_input("Does the car make a clicking noise? Press [Y]Yes or [N]No")
+                if ans2 == "Y":
+                    print("Replace the battery.")
+                elif ans2 == "N":
+                        ans3 = raw_input("Does the car crank up but fail to start? Press [Y]Yes or [N]No")
+                        if ans3 == "Y":
+                            print("Check spark plug connections.")
+                        elif ans3 == "N":
+                                ans4 = raw_input("Does the engine start and then die? Press [Y]Yes or [N]No" + " ")
+                                if ans4 == "Y":
+                                        ans5 = raw_input("Does your car have fuel injection?Press [Y]Yes or [N]No" + " ")
+                                        if ans5 == "Y":
+                                            print("Get it in for service.")
+                                        elif ans5 == "N":
+                                            print("Check to ensure the choke is opening and closing.")
                                         else:
-                                            print("You have made a wrong selection. Please press [Y]Yes or [N]No" + " ")
-                                elif ans4 == "n":
+                                            print("Error")
+                                elif ans4 == "N":
                                     print("Engine is not getting enough fuel. Clean fuel pump.")
                                 else:
-                                    print("You have made a wrong selection. Please press [Y]Yes or [N]No" + " ")
+                                    print("Error")
                         else:
-                            print("You have made a wrong selection. Please press [Y]Yes or [N]No" + " ")
-# indentations for closing previous if statements
+                            print("Error")
                 else:
-                    print("You have made a wrong selection. Please press [Y]Yes or [N]No" + " ")
-        else:
-            print("You have made a wrong selection. Please press [Y]Yes or [N]No" + " ")
-
-diagnose_car()
+                    print("Error")
+#diagnose_car()
 
 """
     Interactively queries the user with yes/no questions to identify a
