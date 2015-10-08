@@ -17,21 +17,21 @@ def name_that_shape():
     no_of_sides = raw_input("Please provide the number of sides of a shape that you are thinking about: ")
 #   if statement is used to provide answers to the possible inputs of the user
     if no_of_sides == "3":
-        print("The polygon you are thinking about is a triangle")
+        print("triangle")
     elif no_of_sides == "4":
-        print("The polygon you are thinking about is a quadrilateral")
+        print("quadrilateral")
     elif no_of_sides == "5":
-        print("The polygon you are thinking about is a pentagon")
+        print("pentagon")
     elif no_of_sides == "6":
-        print("The polygon you are thinking about is a hexagon")
+        print("hexagon")
     elif no_of_sides == "7":
-        print("The polygon you are thinking about is a heptagon")
+        print("heptagon")
     elif no_of_sides == "8":
-        print("The polygon you are thinking about is an octagon")
+        print("octagon")
     elif no_of_sides == "9":
-        print("The polygon you are thinking about is an nonagon")
+        print("nonagon")
     elif no_of_sides == "10":
-        print("The polygon you are thinking about is a decagon")
+        print("decagon")
     else:
         print("Error")
 # Error is printed if the user provides an illegal input i.e. a number outside 3-10
@@ -54,32 +54,32 @@ Error: None
 
 Test Case 4
 user input = 4
-expected output = The polygon you are thinking about is a quadrilateral
+expected output = quadrilateral
 Error: None
 
 Test Case 5
 user_input = 5
-expected output = The polygon you are thinking about is a pentagon
+expected output = pentagon
 Error: None
 
 Test Case 6
 user_input = 6
-expected output = The polygon you are thinking about is a hexagon
+expected output = hexagon
 Error: None
 
 Test Case 7
 user input = 7
-expected output = The polygon you are thinking about is a heptagon
+expected output = heptagon
 Error: None
 
 Test Case 8
 user input = 8
-expected output = The polygon you are thinking about is an octagon
+expected output = octagon
 Error: None
 
 Test Case 9
 user input = 9
-expected output = The polygon you are thinking about is a nonagon
+expected output = nonagon
 Error: None
 
 Test Case 10
