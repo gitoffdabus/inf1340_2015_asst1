@@ -35,47 +35,71 @@ def name_that_shape():
     else:
         print("Error")
 
-#name_that_shape()
+name_that_shape()
 """
-
 Test Case 1
-user input = 7
-expected output = The polygon you are thinking about is a Heptagon
-Error: None
-
-Test Case 2
-user input = 4
-expected output = The polygon you are thinking about is Quadrilateral
-Error: None
-
-Test Case 3
-user input = 9
-expected output = The polygon you are thinking about is an nonagon
-Error: None
-
-Test Case 4
 user input = 1
 expected output = Error
 Error: None
 
-Test Case 5
-user input = 11
+Test Case 2
+user input = 2
 expected output = Error
 Error: None
 
+Test Case 3
+user input = 3
+expected output = Error
+Error: None
+
+Test Case 4
+user input = 4
+expected output = The polygon you are thinking about is a quadrilateral
+Error: None
+
+Test Case 5
+user_input = 5
+expected output = The polygon you are thinking about is a pentagon
+Error: None
+
 Test Case 6
+user_input = 6
+expected output = The polygon you are thinking about is a hexagon
+Error: None
+
+Test Case 7
+user input = 7
+expected output = The polygon you are thinking about is a heptagon
+Error: None
+
+Test Case 8
+user input = 8
+expected output = The polygon you are thinking about is an octagon
+Error: None
+
+Test Case 9
+user input = 9
+expected output = The polygon you are thinking about is a nonagon
+Error: None
+
+Test Case 10
+user input = 10
+expected output = Error
+Error: None
+
+Test Case 11
 user input = "three"
 expected output = Error
 Error: None
 
-Test Case 7
+Test Case 12
 user input = 4.5
 expected output = Error
 Error: None
 
-Test Case 8
+Test Case 13
 user input = 4.0
-expected output = The polygon you are thinking about is a QUADRILATERAL
+expected output = Error
 Error: None
 
 """
