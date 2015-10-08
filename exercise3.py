@@ -16,9 +16,12 @@ __license__ = "MIT License"
 def diagnose_car():
 
     ans1 = None
+# While loop is user to respond to the cases where user does not input "y" or "n"
     while ans1 not in ("y", "n"):
         print("Is the car silent when you turn the key?")
+# ans1, ans2, ans3, ans4, ans5 are the variables used to collect user response to the queries
         ans1 = raw_input("Press [Y]Yes or [N]No")
+# if statement is used to provide a response to the user for a final answer or a possible further query
         if ans1 == "y":
             ans2 = None
             while ans2 not in ("y", "n"):
@@ -28,6 +31,7 @@ def diagnose_car():
                     print("Clean terminals and try starting again")
                 elif ans2 == "n":
                     print("Replace cables and try again")
+# if the user does not press either "y" or "n", while loop comes into play and restarts the if loop
                 else:
                     print("You have made a wrong selection. Please Press Y or N")
         elif ans1 == "n":
@@ -66,22 +70,49 @@ def diagnose_car():
                                     print("You have made a wrong selection. Please press Y or N")
                         else:
                             print("You have made a wrong selection. Please press Y or N")
-
+# indentations for closing previous if statements
                 else:
                     print("You have made a wrong selection. Please press Y or N")
         else:
             print("You have made a wrong selection. Please press Y or N")
 
+
+
     """
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs:
+    Test Case 1
+    Input_1: y
+    Expected Output1: Are the battery terminals corroded?
+    Errors: None
+    Input_2: y
+    Expected Output_1: Clean terminals and try starting again.
+    Errors: None
 
-    Expected Outputs:
+    Test Case 2
+    Input_1: k
+    Expected Output_1: You have made a wrong selection. Please press Y or N
+    Error: None
+    Input_2: n
+    Expected Output_2: Does the car make a clicking noise?
+    Error: None
+    Input_3: n
+    Expected Output_3: Does the engine start and then die?
+    Input_4: y
+    Expected Output_4: Does your car have fuel injection?
+    Error: None
+    Input_5: n
+    Expected Output_4: Check to ensure the choke is opening and closing.
+    Error: None
 
-    Errors:
-
+    Test Case 3
+    Input_1: n
+    Expected Output_1: Does the car make a clicking noise?
+    Error: None
+    Input_2: y
+    Expected Output_2: Replace the battery.
+    Error: None
     """
 
 diagnose_car()
