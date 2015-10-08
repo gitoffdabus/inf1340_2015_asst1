@@ -51,135 +51,112 @@ def diagnose_car():
                             print("Error")
                 else:
                     print("Error")
-#diagnose_car()
+diagnose_car()
 
 """
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
     Test Case 1
-    Input_1: *space*n
-    Expected Output_1: Does the car make a clicking noise?
-    Error: You have made a wrong selection. Please press [Y]Yes or [N]No
-    Solution: Add + " " so there is a space between the question and answer
-
-    Test Case 2
-    Input_1: y
+    Input_1: Y
     Expected Output1: Are the battery terminals corroded?
     Errors: None
-    Input_2: y
+    Input_2: Y
     Expected Output_1: Clean terminals and try starting again.
     Errors: None
 
-    Test Case 3
-    Input_1: y
+    Test Case 2
+    Input_1: Y
     Expected Output_1: Are the battery terminals corroded?
     Error: None
-    Input_2: n
+    Input_2: N
     Expected Output_2: Replace cables and try again.
     Error: None
 
-    Test Case 4
-    Input_1: n
+    Test Case 3
+    Input_1: N
     Expected Output_1: Does the car make a clicking noise?
     Error: None
-    Input_2: y
+    Input_2: Y
     Expected Output_2: Replace the battery.
     Error: None
 
-    Test Case 5
-    Input_1: n
+    Test Case 4
+    Input_1: N
     Expected Output_1: Does the car make a clicking noise?
     Error: None
-    Input_2: n
+    Input_2: N
     Expected Output_2: Does the car crank up but fail to start?
     Error: None
-    Input_3: y
+    Input_3: Y
     Expected Output_3: Check spark plug connections.
     Error: None
 
-    Test Case 6
-    Input_1: n
+    Test Case 5
+    Input_1: N
     Expected Output_1: Does the car make a clicking noise?
     Error: None
-    Input_2: n
+    Input_2: N
     Expected Output_2: Does the car crank up but fail to start?
     Error: None
-    Input_3:n
+    Input_3:N
     Expected Output_3: Does the engine start and then die?
     Error: None
-    Input_4: n
+    Input_4: N
     Expected Output_4: Engine is not getting enough fuel. Clean fuel pump.
-    Input_5: Function ends
-    Error: Forgot to add this input because it was not in the diagram
-    Solution: Add outcome
+    Error: None
 
-    Test Case 7
-    Input_1: n
+    Test Case 6
+    Input_1: N
     Expected Output_1: Does the car make a clicking noise?
     Error: None
-    Input_2: n
+    Input_2: N
     Expected Output_2: Does the car crank up but fail to start?
     Error: None
-    Input_3: n
+    Input_3: N
     Expected Output_3: Does the engine start and then die?
     Error: None
-    Input_4: y
-    Expected Output_4: Does your car have fuel injection?
-
-    Test Case 8
-    Input_1: n
-    Expected Output_1: Does the car make a clicking noise?
-    Error: None
-    Input_2: n
-    Expected Output_2: Does the car crank up but fail to start?
-    Error: None
-    Input_3:n
-    Expected Output_3: Does the engine start and then die?
-    Error: None
-    Input_4: y
+    Input_4: Y
     Expected Output_4: Does your car have fuel injection?
     Error: None
-    Input_5: n
+    Input_5: N
     Expected Output_5: Check to ensure the choke is opening and closing.
     Error: Get it in service
     Solution: Yes and No are reversed on last two outcome nodes. Switch order and problem fixed.
 
-    Test Case 9
-    Input_1: n
+    Test Case 7
+    Input_1: N
     Expected Output_1: Does the car make a clicking noise?
     Error: None
-    Input_2: n
+    Input_2: N
     Expected Output_2: Does the car crank up but fail to start?
     Error: None
-    Input_3:n
+    Input_3: N
     Expected Output_3: Does the engine start and then die?
     Error: None
-    Input_4: y
+    Input_4: Y
     Expected Output_4: Does your car have fuel injection?
     Error: None
-    Input_5: y
-    Expected Output_5: Get it in service.
-    Error: None.
-
-    Test Case 10
-    Input_1: k
-    Expected Output_1: You have made a wrong selection. Please press [Y]Yes or [N]No
-    Error: None
-    Input_2: n
-    Expected Output_2: Does the car make a clicking noise?
-    Error: None
-    Input_3: n
-    Expected Output_3: Does the engine start and then die?
-    Error: None
-    Input_4: y
-    Expected Output_4: Does your car have fuel injection?
-    Error: None
-    Input_5: n
+    Input_5: N
     Expected Output_5: Check to ensure the choke is opening and closing.
     Error: None
 
-
+    Test Case 8
+    Input_1: N
+    Expected Output_1: Does the car make a clicking noise?
+    Error: None
+    Input_2: N
+    Expected Output_2: Does the car crank up but fail to start?
+    Error: None
+    Input_3: N
+    Expected Output_3: Does the engine start and then die?
+    Error: None
+    Input_4: Y
+    Expected Output_4: Does your car have fuel injection?
+    Error: None
+    Input_5: Y
+    Expected Output_5: Get it in service.
+    Error: None
 
     """
 
