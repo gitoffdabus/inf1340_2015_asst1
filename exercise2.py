@@ -34,8 +34,8 @@ def name_that_shape():
         print("The polygon you are thinking about is a decagon")
     else:
         print("Error")
-
-name_that_shape()
+# Error is printed if the user provides an illegal input i.e. a number outside 3-10
+#name_that_shape()
 """
 
 Test Case 1

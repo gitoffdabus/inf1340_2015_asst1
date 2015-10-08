@@ -51,7 +51,9 @@ def diagnose_car():
                             print("Error")
                 else:
                     print("Error")
-diagnose_car()
+
+# Error is printed when the user does not press either "Y" or "N"
+#diagnose_car()
 
 """
     Interactively queries the user with yes/no questions to identify a
@@ -155,7 +157,7 @@ diagnose_car()
     Expected Output_4: Does your car have fuel injection?
     Error: None
     Input_5: Y
-    Expected Output_5: Get it in service.
+    Expected Output_5: Get it in for service.
     Error: None
 
     """
